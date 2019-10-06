@@ -1,4 +1,5 @@
-﻿using Unity.Entities;
+﻿using Unity.Burst;
+using Unity.Entities;
 using Unity.Jobs;
 using Unity.Mathematics;
 using Unity.Transforms;
@@ -8,6 +9,7 @@ namespace Shiena.EcsNoise
 {
 	public class NoiseHeightSystem : JobComponentSystem
 	{
+		[BurstCompile]
 		struct TranslationNoise : IJobForEach<Translation>
 		{
 			public float time;
