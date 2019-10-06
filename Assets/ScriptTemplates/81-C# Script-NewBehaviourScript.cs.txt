@@ -1,0 +1,17 @@
+using UnityEngine;
+
+namespace Shiena.EcsNoise
+{
+	public class #SCRIPTNAME# : MonoBehaviour
+	{
+		private void Start()
+		{
+			#NOTRIM#
+		}
+
+		private void Update()
+		{
+			#NOTRIM#
+		}
+	}
+}
