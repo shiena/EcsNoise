@@ -26,7 +26,7 @@ namespace Shiena.EcsNoise
 			base.OnCreate();
 			GetEntityQuery(new EntityQueryDesc
 			{
-				All = new[] {ComponentType.ReadWrite<Translation>(),}
+				All = new[] {ComponentType.ReadWrite<Translation>()}
 			});
 		}
 
