@@ -33,7 +33,7 @@ namespace Shiena.EcsNoise
             var cube = GameObject.CreatePrimitive(PrimitiveType.Cube);
 
             // EntityのComponentの値をセット(描画メッシュ)
-            manager.SetSharedComponentData(entity, new RenderMesh()
+            manager.SetSharedComponentData(entity, new RenderMesh
             {
                 mesh = cube.GetComponent<MeshFilter>().sharedMesh,
                 material = cube.GetComponent<MeshRenderer>().sharedMaterial,
