@@ -17,7 +17,7 @@ namespace Shiena.EcsNoise
 
 		private void CreateCubes()
 		{
-			var manager = World.Active.EntityManager;
+            var manager = World.DefaultGameObjectInjectionWorld.EntityManager;
 
 			// Entityが持つComponentsを設計(Prefabとして)
 			var archetype = manager.CreateArchetype(

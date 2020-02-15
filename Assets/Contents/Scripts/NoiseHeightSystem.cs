@@ -3,7 +3,6 @@ using Unity.Entities;
 using Unity.Jobs;
 using Unity.Mathematics;
 using Unity.Transforms;
-using UnityEngine;
 
 namespace Shiena.EcsNoise
 {
@@ -32,7 +31,7 @@ namespace Shiena.EcsNoise
 
 		protected override JobHandle OnUpdate(JobHandle inputDeps)
 		{
-			var job = new TranslationNoise {time = Time.realtimeSinceStartup};
+			var job = new TranslationNoise {time = UnityEngine.Time.realtimeSinceStartup};
 			return job.Schedule(this, inputDeps);
 		}
 	}
